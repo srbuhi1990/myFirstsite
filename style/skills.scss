@@ -1,0 +1,96 @@
+.skills {
+  width: 100%;
+  height: auto;
+  background: rgb(1, 1, 25);
+  color: white;
+
+  @include tabletmax {
+    padding: 0 20px;
+  }
+
+  h2 {
+    font-size: 60px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  p {
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+
+    padding: 20px 0;
+
+
+
+    &:hover {
+      transition: 2s;
+      font-size: 30px;
+      color: turquoise;
+
+
+    }
+
+    @include tabletmijin1 {
+
+      font-size: 15px;
+
+      &:hover {
+        transition: 0s;
+        font-size: 15px;
+        color: turquoise;
+
+
+      }
+    }
+
+
+
+  }
+
+  .skills_box {
+
+    padding-bottom: 40px;
+
+    ul {
+      padding-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+      @include tabletmijin {
+        flex-wrap: wrap;
+      }
+
+      li {
+
+        list-style: none;
+        padding: 10px 20px;
+        margin: 10px;
+
+        border-radius: 20px;
+        box-shadow: 0 0 5px 1px turquoise;
+
+        &:hover {
+          box-shadow: 0 0 10px 2px turquoise;
+          background: white;
+
+          a {
+            color: black;
+          }
+        }
+
+
+
+        a {
+          text-decoration: none;
+          color: white;
+
+
+
+        }
+      }
+    }
+  }
+}

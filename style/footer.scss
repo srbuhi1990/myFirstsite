@@ -1,0 +1,73 @@
+footer {
+    height: auto;
+    background: rgb(17, 17, 61);
+
+    .contact {
+
+
+
+        @include tabletmax {
+            padding: 0 20px;
+        }
+        h2 {
+            text-align: center;
+            color: white;
+            padding-top: 40px;
+            font-size: 35px;
+
+            &:hover {
+                color: turquoise;
+            }
+
+            @include tabletmax {
+                font-size: 25px;
+            }
+        }
+
+        p {
+
+
+            margin: auto;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+
+            &:hover {
+
+                color: turquoise;
+
+
+            }
+
+            @include tabletmax {
+                font-size: 15px;
+            }
+        }
+
+        a {
+
+            color: rgba(255, 255, 255, 0.529);
+
+            &:hover {
+
+                color: white;
+
+
+            }
+
+            @include tabletmax {
+                font-size: 15px;
+            }
+        }
+
+        .info {
+            padding-top: 40px;
+            text-align: center;
+            padding-bottom: 40px;
+
+
+
+        }
+    }
+
+}

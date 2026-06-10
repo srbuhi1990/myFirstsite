@@ -1,0 +1,101 @@
+@import './mixin.scss';
+
+
+header {
+    width: 100%;
+    height: auto;
+    background: rgb(5, 5, 31);
+    box-shadow: 0 0 5px 1px turquoise; 
+    position: fixed;
+     z-index:10000 !important;
+
+
+
+
+    nav {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+
+
+        .logo {
+            margin-left: 20px;
+            // border: solid white;
+
+            p {
+                color: white;
+                font-size: 20px;
+
+                @include tabletmini {
+                    font-size: 15px;
+                }
+
+                 @include mobile {
+                  
+                     text-wrap: nowrap ;
+                }
+
+            }
+
+
+
+        }
+
+        .himn {
+            // border: solid white;
+            margin-right: 40px;
+
+
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                @include mobilemax {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                }
+
+                li {
+
+
+                    margin: 10px;
+                    list-style: none;
+
+                    padding: 5px 0;
+                    border-radius: 20px;
+                    box-shadow: 0 0 5px 1px turquoise;
+
+
+
+                    &:hover {
+                        box-shadow: 0 0 10px 2px turquoise;
+                        background: white;
+
+                        a {
+                            color: black;
+                        }
+                    }
+
+                    a {
+
+                        padding: 0 20px;
+                        color: white;
+                        text-decoration: none;
+                        font-size: 20px;
+
+                        @include tabletmini {
+                            font-size: 15px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
