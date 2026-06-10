@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    min-width: 320px;
+    overflow-x: hidden;
+   
+    
+}
+
+@import './style/header.scss';
+@import './style/main.scss';
+@import './style/box.scss';
+@import './style/about.scss';
+@import './style/skills.scss';
+@import './style/work.scss';
+@import './style/footer.scss';
